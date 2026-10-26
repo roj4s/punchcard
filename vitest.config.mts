@@ -8,5 +8,6 @@ export default defineConfig({
   test: {
     // Each test file gets its own module graph, so its own empty database
     env: { DATABASE_PATH: ":memory:" },
+    include: ["src/**/*.test.ts"],
   },
 });
